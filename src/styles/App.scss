@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); // Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); // Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap'); // Allison
-
 @import "./navbar";
+@import "./variables";
 
-$borderRadiusImage: 20px;
 
+
+body{
+    padding-bottom: 3%;
+}
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -19,7 +22,7 @@ a{
         color: black;
     }
     &:hover{
-        color: rgb(255, 111, 111);
+        color: $secondaryColor;
     }
 }
 

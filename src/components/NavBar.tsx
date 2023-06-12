@@ -6,14 +6,44 @@ import '../styles/App.scss'
 import {Link} from 'react-router-dom'
 
 export const NavBar:FC = () => {
+
+  const profilDiv = React.useRef<HTMLDivElement>(null)
+
+  const activeProfil = () => {
+    if(profilDiv.current){
+      if(!profilDiv.current.classList.contains('activeProfil')){
+        profilDiv.current.classList.add('activeProfil')
+      }
+      else{
+        profilDiv.current.classList.remove('activeProfil')
+      }   
+    }
+  }
+
   return (
-    <div className='navBar'>
+    <div>
+      <div className='navBar'>
         <Link to="/"><img src={logo} width={150} height={60} alt=""/></Link>
         <div className='navBar_Menu'>
             <Link to="/product_list"><h3>Product</h3></Link>
             <h3>Contact</h3>
-            <img src={profil} width={40} alt=""/>
+            <img src={profil} width={40} alt="" onClick={activeProfil}/>
         </div>
+      </div>
+      <div className='profilConnexion' ref={profilDiv}>
+        <div className='profilConnexion_content'>
+          <h1>Connection</h1>
+          <form>
+            <input type='text' placeholder='Email'/>
+            <input type='password' placeholder='Password' />
+            <button>Sign In</button>
+          </form>
+          <p><a href='#'>Forgot you password ?</a></p>
+          <p><a href='#'>Create your account</a></p>
+        </div>
+        
+      </div>
     </div>
+    
   );
 }
