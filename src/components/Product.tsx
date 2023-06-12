@@ -1,5 +1,5 @@
 import React from 'react';
-import {FC, useState} from 'react'
+import {FC} from 'react'
 import '../styles/App.scss'
 
 interface IProductProps {
@@ -12,7 +12,7 @@ interface IProductProps {
 export const Product: FC<IProductProps> = (props) => {    
   return (
     <div className='product_of_List'>
-      <img src={props.img} height={500}/>
+      <img src={props.img} height={500} alt=''/>
         <div className='product_List_detail'>
             <h2>{props.name}</h2>
             <h2>{props.price}€</h2>

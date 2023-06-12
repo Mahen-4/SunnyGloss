@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); // Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); // Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap'); // Allison
+
+@import "./navbar";
+
+$borderRadiusImage: 20px;
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -9,36 +14,15 @@
 a{
     text-decoration: none;
     transition: .3s;
+
+    &:link, &:visited{
+        color: black;
+    }
+    &:hover{
+        color: rgb(255, 111, 111);
+    }
 }
-a:link, a:visited {
-    color: black;
-}
-a:hover{
-    color: rgb(255, 111, 111);
-}
-//---------------------------- NAVBAR -----------------------------------------//
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
-    align-items: center;
-    height: 70px;
-    width: 30%;
-    margin-left: 33%;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 30px;
-}
-.navBar img, .navBar_Menu img {
-    padding: 10px;
-}
-.navBar_Menu{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-}
+
 
 
 //---------------------------- PRODUCT ON A LIST -----------------------------------------//
@@ -46,17 +30,28 @@ a:hover{
 .product_list{
     display: flex;
     flex-wrap: wrap;
-}
 
-.product_of_List{
-    margin-left: 5%;
-    margin-top: 5%;
+    .product_of_List{
+        margin-left: 5%;
+        margin-top: 5%;
+        img{
+            border-radius: $borderRadiusImage;
+        }
+        .product_List_detail{
+            display: flex;
+            justify-content: space-between;
+            width: 470px;
+            padding-left: 10px;
+        }
+        
+    }
 }
-.product_List_detail{
-    display: flex;
-    justify-content: space-between;
-    width: 470px;
-    padding-left: 10px;
+.banniere{
+    width: 50%;
+    height: 250px;
+    margin-top: 4%;
+    margin-left: 25%;
+    border-radius: $borderRadiusImage;
 }
 
 // -------------------------------------- HOME --------------------------------------------//
@@ -64,25 +59,26 @@ a:hover{
     font-family: 'Josefin Sans', sans-serif;
     margin-left: 28%;
     margin-top: 5%;
-}
-.nouvelleCollection > .nvC_titre > a > h1{
-    font-size: 70px !important;
-}
 
-.nvC_detail{
-    display: flex;
-    flex-direction: column;
-    margin-left: 17%;
-}
-.nvC_detail > p {
-    font-family: 'Allison', cursive;
-    font-size: 110px;
-}
-.nvC_detail > img {
-    margin-left: 9%;
-}
-.nvC_detail > #palette{
-    position: absolute;
-    margin-left: -8%;
-    margin-top: -2%;
+    .nvC_titre > a > h1{
+        font-size: 70px !important;
+    }
+
+    .nvC_detail{
+        display: flex;
+        flex-direction: column;
+        margin-left: 17%;
+        p {
+            font-family: 'Allison', cursive;
+            font-size: 110px;
+        }
+        img {
+            margin-left: 9%;
+        }
+        #palette{
+            position: absolute;
+            margin-left: -8%;
+            margin-top: -2%;
+        }
+    }
 }
