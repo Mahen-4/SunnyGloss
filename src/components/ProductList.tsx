@@ -16,13 +16,13 @@ export const Product_List:FC =  () => {
       <img src={banniereRouge} alt=''className='banniere'/>
       <div className='product_list'>
         <Product name="Gloss Rouge" price={30} img={gRouge}/>
-        <Product name="Gloss Rouge" price={30} img={gBelge}/>
-        <Product name="Gloss Rouge" price={30} img={gRose}/>
+        <Product name="Gloss Belge" price={30} img={gBelge}/>
+        <Product name="Gloss Rose" price={30} img={gRose}/>
       </div>
       <img src={bannierePalette} alt=''className='banniere'/> 
       <div className='product_list'>
-        <Product name="Gloss Rouge" price={30} img={gRoseFonce}/>  
-        <Product name="Gloss Rouge" price={30} img={gBleu}/>
+        <Product name="Gloss Rose Foncé" price={30} img={gRoseFonce}/>  
+        <Product name="Gloss Bleu" price={30} img={gBleu}/>
       </div>
     </div>
   );

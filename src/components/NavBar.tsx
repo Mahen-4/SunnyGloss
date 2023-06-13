@@ -8,14 +8,17 @@ import {Link} from 'react-router-dom'
 export const NavBar:FC = () => {
 
   const profilDiv = React.useRef<HTMLDivElement>(null)
+  const profilContentDiv = React.useRef<HTMLDivElement>(null)
 
   const activeProfil = () => {
-    if(profilDiv.current){
+    if(profilDiv.current && profilContentDiv.current){
       if(!profilDiv.current.classList.contains('activeProfil')){
         profilDiv.current.classList.add('activeProfil')
+        profilContentDiv.current.classList.add('activeProfilContent')
       }
       else{
         profilDiv.current.classList.remove('activeProfil')
+        profilContentDiv.current.classList.remove('activeProfilContent')
       }   
     }
   }
@@ -31,7 +34,7 @@ export const NavBar:FC = () => {
         </div>
       </div>
       <div className='profilConnexion' ref={profilDiv}>
-        <div className='profilConnexion_content'>
+        <div className='profilConnexion_content' ref={profilContentDiv}>
           <h1>Connection</h1>
           <form>
             <input type='text' placeholder='Email'/>
