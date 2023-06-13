@@ -36,8 +36,15 @@ a{
     .product_of_List{
         margin-left: 5%;
         margin-top: 5%;
+        
+
         img{
             border-radius: $borderRadiusImage;
+            transition: .1s ease-in-out;
+            &:hover{
+                cursor: pointer;
+                border: 3px solid $secondaryColor;
+            }
         }
         .product_List_detail{
             display: flex;
@@ -63,7 +70,7 @@ a{
     margin-top: 5%;
 
     .nvC_titre > a > h1{
-        font-size: 70px !important;
+        font-size: 85px !important;
     }
 
     .nvC_detail{
@@ -73,14 +80,23 @@ a{
         p {
             font-family: 'Allison', cursive;
             font-size: 110px;
+            color: black;
+            animation: clignote 2s ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes clignote {
+            0%{color: black;}
+            50%{color: $secondaryColor;}
+            100%{color: black;}
+            
         }
         img {
             margin-left: 9%;
         }
         #palette{
-            position: absolute;
-            margin-left: -8%;
-            margin-top: -2%;
+            position: relative;
+            margin-left: -15%;
+            margin-top: -36%;
         }
     }
 }

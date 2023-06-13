@@ -9,8 +9,8 @@ export const Home: FC = () => {
     <div>
         <div className='nouvelleCollection'>
             <div className='nvC_titre'>
-                <Link to="/product_list"><h1>NOUVELLE COLLECTION</h1></Link>
-                <p>Promotion jusqu'au 1 Juin</p>
+                <Link to="/product_list"><h1>NEW COLLECTION</h1></Link>
+                <p>Promotion until 1 June</p>
             </div>
             <div className='nvC_detail'>
                 <p>Sunny Smile</p>

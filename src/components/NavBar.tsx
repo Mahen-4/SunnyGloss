@@ -29,7 +29,6 @@ export const NavBar:FC = () => {
         <Link to="/"><img src={logo} width={150} height={60} alt=""/></Link>
         <div className='navBar_Menu'>
             <Link to="/product_list"><h3>Product</h3></Link>
-            <h3>Contact</h3>
             <img src={profil} width={40} alt="" onClick={activeProfil}/>
         </div>
       </div>
