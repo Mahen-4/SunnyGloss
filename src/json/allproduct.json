@@ -1,0 +1,42 @@
+[
+    {
+        "id":1, 
+        "name":"Gloss-RED",
+        "price": 30,
+        "quantity": 1,
+        "img": "https://drive.google.com/uc?export=view&id=1BFzPQm-xHokC90KhzbsyHdA_9ISDWaU6",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        "id":2, 
+        "name":"Gloss-BEIGE",
+        "price": 20,
+        "quantity": 1,
+        "img": "https://drive.google.com/uc?export=view&id=1lJrwS3mtZSxXjZ1AQLjAF-LoLqVEPShM",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        "id":3, 
+        "name":"Gloss-PINK",
+        "price": 25,
+        "quantity": 1,
+        "img": "https://drive.google.com/uc?export=view&id=1lhvPtxIzWt0IzdDkxPNi3WwQVAHYNwpx",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        "id":4, 
+        "name":"Gloss-DARK-PINK",
+        "price": 35,
+        "quantity": 1,
+        "img":  "https://drive.google.com/uc?export=view&id=1-vuj3hWYoZb69B8NlNJThgu1EDgGmTj-",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        "id":5, 
+        "name":"Gloss-BLUE",
+        "price": 45,
+        "quantity": 1,
+        "img": "https://drive.google.com/uc?export=view&id=1dY6DYrj1rDrUHrA3x3FtURK5Cy27epIY",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+]

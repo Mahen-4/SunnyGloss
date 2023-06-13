@@ -7,6 +7,9 @@
 
 
 
+body{
+    overflow-x: hidden;
+}
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +35,7 @@ a{
 .product_list{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-evenly;
     .product_of_List{
         margin-left: 5%;
         margin-top: 5%;
@@ -99,4 +102,36 @@ a{
             margin-top: -36%;
         }
     }
+}
+
+// ----------------------------------------------------------------- ONE PRODUCT DETAILS 
+
+.productDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img{
+        margin-top:3%;
+        margin-left: 2%;
+        border-radius: $borderRadiusImage;
+    }
+    .Pdetails{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        width: 30%;
+        margin-top: 3%;
+        text-align: center;
+    }
+    button{
+        @include buttons(62px,100%,30px, 2%);
+    }
+    input{
+        @include inputs(30px, 100%, 30px)
+    }
+    h3{
+        text-align: left !important;
+        font-size: 30px;
+    }
+
 }
