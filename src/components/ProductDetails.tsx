@@ -8,14 +8,14 @@ import { useParams } from 'react-router-dom';
 export const ProductDetails: FC= () => {    
   let { idProduct } = useParams();
   
-  let [product, setProduct] = React.useState<Object>({name:"",price:0})
+  let [product, setProduct] = React.useState<object | any>({})
 
   let [priceChange, setPriceChange] = React.useState<number>(0)
 
   React.useEffect(()=>{
     productJSON.map(productONE => {
       if(productONE.id === Number(idProduct)){
-        setProduct(product => ({...productONE}))
+        setProduct({...productONE})
         setPriceChange(productONE.price)
       }
     }) 
